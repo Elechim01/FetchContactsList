@@ -11,6 +11,8 @@
 		C46D386E2895755100BFC3BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46D386D2895755100BFC3BB /* ContentView.swift */; };
 		C46D38702895755300BFC3BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C46D386F2895755300BFC3BB /* Assets.xcassets */; };
 		C46D38732895755300BFC3BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C46D38722895755300BFC3BB /* Preview Assets.xcassets */; };
+		C46D387A289575B100BFC3BB /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46D3879289575B100BFC3BB /* Contacts.swift */; };
+		C46D387E2895787000BFC3BB /* ContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46D387D2895787000BFC3BB /* ContactsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		C46D386D2895755100BFC3BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C46D386F2895755300BFC3BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C46D38722895755300BFC3BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C46D3879289575B100BFC3BB /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
+		C46D387D2895787000BFC3BB /* ContactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,9 @@
 		C46D385F2895755100BFC3BB = {
 			isa = PBXGroup;
 			children = (
+				C46D387F28957BA000BFC3BB /* View */,
+				C46D387C2895785800BFC3BB /* ViewModel */,
+				C46D387B2895784B00BFC3BB /* Model */,
 				C46D386A2895755100BFC3BB /* FetchContactsList */,
 				C46D38692895755100BFC3BB /* Products */,
 			);
@@ -52,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				C46D386B2895755100BFC3BB /* FetchContactsListApp.swift */,
-				C46D386D2895755100BFC3BB /* ContentView.swift */,
 				C46D386F2895755300BFC3BB /* Assets.xcassets */,
 				C46D38712895755300BFC3BB /* Preview Content */,
 			);
@@ -65,6 +71,30 @@
 				C46D38722895755300BFC3BB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C46D387B2895784B00BFC3BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C46D3879289575B100BFC3BB /* Contacts.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C46D387C2895785800BFC3BB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C46D387D2895787000BFC3BB /* ContactsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C46D387F28957BA000BFC3BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C46D386D2895755100BFC3BB /* ContentView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +168,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C46D386E2895755100BFC3BB /* ContentView.swift in Sources */,
+				C46D387E2895787000BFC3BB /* ContactsViewModel.swift in Sources */,
 				C46D386C2895755100BFC3BB /* FetchContactsListApp.swift in Sources */,
+				C46D387A289575B100BFC3BB /* Contacts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +302,7 @@
 				DEVELOPMENT_TEAM = G7DSPSWXXC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSContactsUsageDescription = "Dacci i tuoi contatti li per favore (li rubiamo)😈";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +332,7 @@
 				DEVELOPMENT_TEAM = G7DSPSWXXC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSContactsUsageDescription = "Dacci i tuoi contatti li per favore (li rubiamo)😈";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
